@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter&display=swap" rel="stylesheet">
+</head>
+<div class="progress">
+        
+</div>
+<body>
+    
+    <nav>
+        <a href="#section-1">Editor HTML</a>
+        <a href="#section-2">Drawing App</a>
+        <a href="#section-3">Slider</a>
+    </nav>
+
+    <!-- Esto es para el editor de HTML -->
+    <div class="container" id="section-1">
+
+        <div class="textarea">
+
+            <div class="head">
+
+                <button onclick="run()">Run</button>
+
+            </div>
+            
+            <div class="wrapper">
+
+                <textarea id="input" class="input">
+
+                </textarea>
+
+                <div class="result">
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Esto  es para la aplicación de dibujo-->
+    <div id="section-2" class="draw-app">
+
+        <canvas id="canvas" width="350" height="700"></canvas>
+
+        <div class="toolbox">
+            <button id="decrease">-</button>
+            <span id="size">10</span>
+            <button id="increase">+</button>
+            <input type="color" id="color">
+            <button id="clear">X</button>
+        </div>
+        
+    </div>
+    
+
+    <!-- Esto es para el carrusel de fotos sencillito-->
+    <div id="section-3">
+
+        <section class="slider">
+
+            <div class="slider-wrapper">
+                <div class="wrapper-holder">
+                    <div class="slide" id="slider-img-1"></div>
+                    <div class="slide" id="slider-img-2"></div>
+                    <div class="slide" id="slider-img-3"></div>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+    
+    <script src="javascript.js">
+
+    </script>
+</body>
+</html>
